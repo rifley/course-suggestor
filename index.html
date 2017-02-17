@@ -9,6 +9,10 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus Track Suggestor</h1>
+        <p>Welcome! It seems like you may be interested in programming career! Epicodus offers a few different tracks, resulting in the learning of different programming languages. While all languages are useful to learn, answering the questions below might point you towards a track that best fits your interests/needs.</p>
+      </div>
       <form class="tracks" >
         <div>
           <h4>Why do you want a job in the programming industry?</h4>
@@ -20,7 +24,7 @@
           </select>
         </div>
         <div>
-          <h4>How comfortable are you working in a group environment?</h4>
+          <h4>How comfortable are you working in a team environment?</h4>
           <select class="form-control" id="questionTwo">
             <option value="1">Not at all</option>
             <option value="2">Somewhat</option>
@@ -54,15 +58,29 @@
             <option value="5">Why does this matter?</option>
           </select>
         </div>
-        <button type="submit">Hey</button>
+        <button type="submit" class="btn-info">I believe</button>
       </form>
-    </div>
-    <div id="outputTest">
-      <h1 class="seekHelp">Hey You Probably Need Help</h1>
-      <h1 class="general">Hey you can probably close your eyes and choose one</h1>
-      <p id="output">
-
-      </p>
+      <div id="track-result">
+        <h1 class="seekHelp">Hey! You Probably Need Help.. but probably not from me.</h1>
+        <h1 class="general">If money is all that you're after, you can probably just close your eyes and pick one. Learning any programming language can be a lucrative investment.</h1>
+        <div class="row">
+          <div class="col-md-3 track">
+            <h4 id="cSharp">C#</h4>
+          </div>
+          <div class="col-md-3 track">
+            <h4 id="java">Java</h4>
+          </div>
+          <div class="col-md-3 track">
+            <h4 id="ruby">Ruby</h4>
+          </div>
+          <div class="col-md-3 track">
+            <h4 id="PHP">PHP</h4>
+          </div>
+        </div>
+        <p id="output">
+          Thank you for taking the time to question the world around you. It doesn't matter. I was just curious. Gosh.
+        </p>
+      </div>
     </div>
   </body>
 </html>

@@ -1,9 +1,11 @@
 .seekHelp {
   display: none;
+
 }
 
 .general {
   display: none;
+
 }
 
 .greenBackground {
@@ -16,4 +18,22 @@
 
 .lover {
   background-image: url("../img/hearts.jpg");
+}
+
+button {
+  margin: 10px;
+}
+
+#output {
+  display: none;
+}
+
+.track h4{
+  text-align: center;
+  font-family: monospace;
+}
+
+.row {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
