@@ -8,40 +8,40 @@ $(function() {
     var inputFive = parseInt($("#questionFive").val());
     console.log(inputOne);
     if (inputOne !== 1 && inputOne !== 4) {
-      $("#output").text(inputOne);
+
       if ( 1 < inputTwo && inputTwo < 4 ) {
         $("body").removeClass("lover");
         $("#outputTest").hide();
         if (inputThree === 1) {
-
-          alert("cSharp");
+          $("#cSharp").addClass("highlight");
         }
         else if (inputThree===2 && inputFour===3) {
-          alert("Ruby");
+          $("#ruby").addClass("highlight");
         }
         else if (inputThree===2 && inputFour===2) {
-          alert("Java")
+          $("#java").addClass("highlight");
         }
         else if (inputThree===3) {
-          alert("PHP");
+          $("#php").addClass("highlight");
         }
 
       }
       else if (inputTwo === 4) {
         $("#outputTest").hide();
+        $("body").addClass("lover");
         if (inputThree === 1) {
-          alert("cSharp");
+          $("#cSharp").addClass("highlight");
         }
         else if (inputThree===2 && inputFour===3) {
-          alert("Ruby");
+          $("#ruby").addClass("highlight");
         }
         else if (inputThree===2 && inputFour===2) {
-          alert("Java")
+          $("#java").addClass("highlight");
         }
         else if (inputThree===3) {
-          alert("PHP");
+          $("#php").addClass("highlight");
         }
-        $("body").addClass("lover");
+
       }
 
       else {
@@ -65,6 +65,10 @@ $(function() {
       $(".general").show();
       $(".seekHelp").hide();
 
+    }
+    if (inputFive===5) {
+
+      $("#curious").show();
     }
   })
 });

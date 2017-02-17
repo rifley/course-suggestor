@@ -8,6 +8,10 @@
 
 }
 
+.highlight {
+  background-color: salmon;
+}
+
 .greenBackground {
   background-color: green;
 }
@@ -24,16 +28,34 @@ button {
   margin: 10px;
 }
 
-#output {
+#curious {
   display: none;
+  width: 200px;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 6px;
+  border: dotted 2px black;
 }
 
 .track h4{
   text-align: center;
   font-family: monospace;
+  border: solid 1px black;
+  background-color: white;
 }
 
 .row {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.tracks h4 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+form {
+  border: dotted 1px black;
+  background-color: white;
+  padding: 5px;
 }
