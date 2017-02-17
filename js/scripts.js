@@ -11,6 +11,7 @@ $(function() {
       $("#output").text(inputOne);
       if ( 1 < inputTwo && inputTwo < 4 ) {
         $("body").removeClass("lover");
+        $("#outputTest").hide();
         if (inputThree === 1) {
 
           alert("cSharp");
@@ -27,9 +28,8 @@ $(function() {
 
       }
       else if (inputTwo === 4) {
-        $("body").addClass("lover");
+        $("#outputTest").hide();
         if (inputThree === 1) {
-
           alert("cSharp");
         }
         else if (inputThree===2 && inputFour===3) {
@@ -41,10 +41,13 @@ $(function() {
         else if (inputThree===3) {
           alert("PHP");
         }
-
+        $("body").addClass("lover");
       }
 
       else {
+        $("body").removeClass("lover");
+        $(".general").hide();
+        $(".seekHelp").hide();
         $(".groupComfort").show();
         alert("here");
       }
@@ -56,9 +59,12 @@ $(function() {
       $(".seekHelp").show();
     }
     else {
+      $("#outputTest").show();
+      $("#outputTest").addClass("greenBackground")
+      $("body").removeClass("lover");
       $(".general").show();
       $(".seekHelp").hide();
-      $("#outputTest").addClass("greenBackground")
+
     }
   })
 });
