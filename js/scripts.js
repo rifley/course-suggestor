@@ -9,21 +9,39 @@ $(function() {
     console.log(inputOne);
     if (inputOne !== 1 && inputOne !== 4) {
       $("#output").text(inputOne);
-      if ( 1 < inputFour && inputFour < 4 ) {
-        if (inputTwo+inputThree === 2) {
-          alert("microsoft");
+      if ( 1 < inputTwo && inputTwo < 4 ) {
+        $("body").removeClass("lover");
+        if (inputThree === 1) {
+
+          alert("cSharp");
         }
-        else if (inputTwo+inputThree>2 && inputTwo+inputThree<5) {
+        else if (inputThree===2 && inputFour===3) {
+          alert("Ruby");
+        }
+        else if (inputThree===2 && inputFour===2) {
+          alert("Java")
+        }
+        else if (inputThree===3) {
           alert("PHP");
-        }
-        else {
-          alert("ruby");
         }
 
       }
-      else if (inputFour === 4) {
-        $(".lover").show();
-        alert("lover");
+      else if (inputTwo === 4) {
+        $("body").addClass("lover");
+        if (inputThree === 1) {
+
+          alert("cSharp");
+        }
+        else if (inputThree===2 && inputFour===3) {
+          alert("Ruby");
+        }
+        else if (inputThree===2 && inputFour===2) {
+          alert("Java")
+        }
+        else if (inputThree===3) {
+          alert("PHP");
+        }
+
       }
 
       else {
@@ -38,8 +56,9 @@ $(function() {
       $(".seekHelp").show();
     }
     else {
-      $(".seekHelp").hide();
       $(".general").show();
+      $(".seekHelp").hide();
+      $("#outputTest").addClass("greenBackground")
     }
   })
 });
