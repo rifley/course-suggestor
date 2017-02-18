@@ -6,7 +6,6 @@ $(function() {
     var inputThree = parseInt($("#questionThree").val());
     var inputFour = parseInt($("#questionFour").val());
     var inputFive = parseInt($("#questionFive").val());
-    console.log(inputOne);
 
     if (inputOne !== 1 && inputOne !== 4) {
       $(".general").hide();
