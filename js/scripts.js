@@ -7,11 +7,16 @@ $(function() {
     var inputFour = parseInt($("#questionFour").val());
     var inputFive = parseInt($("#questionFive").val());
     console.log(inputOne);
-    if (inputOne !== 1 && inputOne !== 4) {
 
+    if (inputOne !== 1 && inputOne !== 4) {
+      $(".general").hide();
+      $(".seekHelp").hide();
+      $("h4").removeClass("highlight");
+      $(".track").removeClass("highlight");
+      $("#curious").hide();
+      $("#pair").hide();
       if ( 1 < inputTwo && inputTwo < 4 ) {
         $("body").removeClass("lover");
-        $("#outputTest").hide();
         if (inputThree === 1) {
           $("#cSharp").addClass("highlight");
         }
@@ -27,8 +32,15 @@ $(function() {
 
       }
       else if (inputTwo === 4) {
-        $("#outputTest").hide();
+        $(".general").hide();
+        $(".seekHelp").hide();
+        $("h4").removeClass("highlight");
+        $(".track").removeClass("highlight");
+        $("#curious").hide();
+        $("#pair").hide();
         $("body").addClass("lover");
+        $(".tracks").addClass("visible");
+
         if (inputThree === 1) {
           $("#cSharp").addClass("highlight");
         }
@@ -48,22 +60,32 @@ $(function() {
         $("body").removeClass("lover");
         $(".general").hide();
         $(".seekHelp").hide();
-        $(".groupComfort").show();
-        alert("here");
+        $("h4").removeClass("highlight");
+        $(".track").removeClass("highlight");
+        $("#curious").hide();
+        $("#pair").show();
+
       }
 
 
     }
     else if (inputOne === 4) {
       $(".general").hide();
+      $("h4").removeClass("highlight");
+      $(".track").removeClass("highlight");
+      $("#curious").hide();
+      $("#pair").hide();
       $(".seekHelp").show();
+
     }
     else {
-      $("#outputTest").show();
-      $("#outputTest").addClass("greenBackground")
+
       $("body").removeClass("lover");
-      $(".general").show();
       $(".seekHelp").hide();
+      $("#curious").hide();
+      $("#pair").hide();
+      $(".general").show();
+      $(".track").addClass("highlight");
 
     }
     if (inputFive===5) {

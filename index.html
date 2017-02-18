@@ -13,7 +13,7 @@
         <h1>Epicodus Track Suggestor</h1>
         <p>Welcome! It seems like you may be interested in programming career! Epicodus offers a few different tracks, resulting in the learning of different programming languages. While all languages are useful to learn, answering the questions below might point you towards a track that best fits your interests/needs.</p>
       </div>
-      <form class="tracks">
+      <form class="tracksForm">
         <div>
           <h4>Why do you want a job in the programming industry?</h4>
           <select class="form-control" id="questionOne">
@@ -59,14 +59,21 @@
           </select>
         </div>
         <p id="curious">
-          Thank you for taking the time to question the world around you. It doesn't matter. I was just curious. Gosh.
+          Thank you for taking the time to question the world around you. It doesn't matter. I was just curious. However, I will be making a note of this.
         </p>
         <button type="submit" class="btn-info">I believe</button>
       </form>
-      <div id="track-result">
-        <h1 class="seekHelp">Hey! You Probably Need Help.. but probably not from me.</h1>
+      <div>
+        <div id="pair">
+          <h4>Epicodus uses the pair-programming approach to learning. Here is a short excerpt from the Epicodus website:</h4>
+          <blockquote>
+            <em>Most class days, you'll practice pair programming: two people sharing one computer, taking turns who uses the keyboard and mouse. By working together, you catch each other's mistakes, teach each other new skills, and come up with ideas together neither of you would have had alone. Pairing is increasingly used by tech companies (like Facebook and Square), and we've found that pair programming helps you learn faster, too.</em>
+          </blockquote>
+          <h4>It is 100% necessary to be able to work with others at Epicodus, and you will not be able to succeed here without that ability. Please rethink your answer if you wish to continue using the Track Suggestor.</h4>
+        </div>
+        <h1 class="seekHelp">I'm sorry to hear about that. You are  probably in need of serious help.. oh well.</h1>
         <h1 class="general">If money is all that you're after, you can probably just close your eyes and pick one. Learning any programming language can be a lucrative investment.</h1>
-        <div class="row">
+        <div class="row tracks">
           <div class="col-md-3 track">
             <h4 id="cSharp">C#</h4>
           </div>

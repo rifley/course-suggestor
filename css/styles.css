@@ -8,6 +8,10 @@
 
 }
 
+.highlightAll {
+  background-color:forestgreen;
+}
+
 .highlight {
   background-color: salmon;
 }
@@ -16,9 +20,12 @@
   background-color: green;
 }
 
-/*h1 {
-  background-color: green;
-}*/
+#pair {
+  display: none;
+  border: solid 2px black;
+  padding: 5px;
+  margin: 10px;
+}
 
 .lover {
   background-image: url("../img/hearts.jpg");
@@ -41,7 +48,6 @@ button {
   text-align: center;
   font-family: monospace;
   border: solid 1px black;
-  background-color: white;
 }
 
 .row {
@@ -49,13 +55,17 @@ button {
   margin-bottom: 30px;
 }
 
-.tracks h4 {
+.tracksForm h4 {
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
 form {
-  border: dotted 1px black;
+  border: solid 1px black;
   background-color: white;
   padding: 5px;
+}
+
+.visible {
+  background-color: white;
 }
